@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .MuiTableContainer-root {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .MuiPaper-rounded {
+            border-radius: 4px;
+        }
+
+        .makeStyles-table-66 {
+            min-width: 650px;
+        }
+
+        .MuiTable-root {
+            width: 100%;
+            display: table;
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        .MuiTableHead-root {
+            display: table-header-group;
+        }
+
+        .MuiTableRow-root {
+            color: inherit;
+            display: table-row;
+            outline: 0;
+            vertical-align: middle;
+        }
+
+        .MuiTableCell-head {
+            color: rgba(0, 0, 0, 0.87);
+            font-weight: 500;
+            line-height: 1.5rem;
+        }
+
+        .MuiTableCell-root {
+            display: table-cell;
+            padding: 16px;
+            font-size: 0.875rem;
+            text-align: left;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            border-bottom: 1px solid rgba(224, 224, 224, 1);
+            letter-spacing: 0.01071em;
+            vertical-align: inherit;
+        }
+
+        .MuiTableBody-root {
+            display: table-row-group;
+        }
+
+        .MuiTableRow-root {
+            color: inherit;
+            display: table-row;
+            outline: 0;
+            vertical-align: middle;
+        }
+
+        .MuiTableCell-root {
+            display: table-cell;
+            padding: 16px;
+            font-size: 0.875rem;
+            text-align: left;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-weight: 400;
+            line-height: 1.43;
+            border-bottom: 1px solid rgba(224, 224, 224, 1);
+            letter-spacing: 0.01071em;
+            vertical-align: inherit;
+        }
+
+        .MuiTableCell-body {
+            color: rgba(0, 0, 0, 0.87);
+        }
+    </style>
+</head>
+
+<body>
+    <div style="padding: 15px;">
+        <div
+            style="min-height: 55px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+            <div
+                style="min-height: 50px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <img src="https://zappa-mosh-social2.s3.eu-central-1.amazonaws.com/smartLogo.jpg" alt="Logo"
+                    style="width: 300px; height: 140px;">
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                        Activation Date:</p>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 16px; font-weight: bolder; padding: 2px;">
+                    </p>
+                </div>
+                <div style="width: 100%; height: 1px; background-color: rgb(0, 0, 0); margin: 2px;"></div>
+            </div>
+        </div>
+        <div
+            style="min-height: 55px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+            <div
+                style="min-height: 50px; width: 20%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; padding: 2px 2px 0px; margin: 2px 2px 0px; width: fit-content;">
+                        ORDER ITEMS</p>
+                </div>
+                <div style="width: 100%; height: 1px; background-color: rgb(0, 0, 0); margin: 2px 2px 0px;"></div>
+            </div>
+        </div>
+        <div
+            style="min-height: 55px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+            <div
+                style="min-height: 50px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                        Product</p>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 30px; font-weight: bolder; padding: 2px;">
+                        Iphone 12 Black 128 Giga</p>
+                </div>
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                        Price</p>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 30px; font-weight: bolder; padding: 2px;">
+                        PHP 1000</p>
+                </div>
+            </div>
+        </div>
+        <div
+            style="min-height: 55px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+            <div
+                style="min-height: 50px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                        Product</p>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 30px; font-weight: bolder; padding: 2px;">
+                        Iphone 12 Black 128 Giga</p>
+                </div>
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                        Price</p>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 30px; font-weight: bolder; padding: 2px;">
+                        PHP 1000</p>
+                </div>
+            </div>
+        </div>
+        <div
+            style="min-height: 55px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+            <div
+                style="min-height: 50px; width: 30%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; padding: 2px; margin: 2px; width: fit-content;">
+                        CHARGE SUMMARY</p>
+                </div>
+                <div style="width: 100%; height: 1px; background-color: rgb(0, 0, 0); margin: 2px;"></div>
+            </div>
+        </div>
+        <div
+            style="min-height: 55px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+            <div
+                style="min-height: 50px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; padding: 2px; margin: 2px; width: fit-content;">
+                        Charges Overview</p>
+                </div>
+                <div style="width: 100%; height: 1px; background-color: rgb(0, 0, 0); margin: 2px;"></div>
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 100%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                        Total Monthly Reccurent</p>
+                    <p
+                        style="font-size: 100%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 30px; font-weight: bolder; padding: 2px;">
+                    </p>
+                </div>
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 100%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                        Tax</p>
+                    <p
+                        style="font-size: 100%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 30px; font-weight: bolder; padding: 2px;">
+                    </p>
+                </div>
+            </div>
+            <div
+                style="min-height: 50px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; padding: 2px; margin: 2px; width: fit-content;">
+                        Bill Projection</p>
+                </div>
+                <div style="width: 100%; height: 1px; background-color: rgb(0, 0, 0); margin: 2px;"></div>
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 100%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                        Total Monthly Reccurent</p>
+                    <p
+                        style="font-size: 100%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 30px; font-weight: bolder; padding: 2px;">
+                    </p>
+                </div>
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 100%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                        Tax</p>
+                    <p
+                        style="font-size: 100%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 30px; font-weight: bolder; padding: 2px;">
+                    </p>
+                </div>
+            </div>
+            <div
+                style="min-height: 50px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; padding: 2px; margin: 2px; width: fit-content;">
+                        Pay Now</p>
+                </div>
+                <div style="width: 100%; height: 1px; background-color: rgb(0, 0, 0); margin: 2px;"></div>
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                    </p>
+                    <p
+                        style="font-size: 100%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 30px; font-weight: bolder; padding: 2px;">
+                        PHP 1000</p>
+                </div>
+            </div>
+        </div>
+        <div
+            style="min-height: 10px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+            <div
+                style="min-height: 10px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div style="width: 100%; height: 1px; background-color: rgb(0, 0, 0); margin: 2px;"></div>
+            </div>
+        </div>
+        <div
+            style="min-height: 55px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+            <div
+                style="min-height: 50px; width: 30%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; padding: 2px; margin: 2px; width: fit-content;">
+                        Customer Details</p>
+                </div>
+                <div style="width: 100%; height: 1px; background-color: rgb(0, 0, 0); margin: 2px;"></div>
+                <div>
+                    <p
+                        style="font-size: 120%; display: flex; align-items: center; justify-content: center; padding: 2px; margin: 2px; width: fit-content;">
+                        Main Contact</p>
+                </div>
+            </div>
+        </div>
+        <div
+            style="min-height: 55px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+            <div
+                style="min-height: 50px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; padding: 2px; margin: 2px; width: fit-content;">
+                        Name</p>
+                </div>
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                    </p>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 30px; font-weight: bolder; padding: 2px;">
+                        Estban Fernandez Gonzles</p>
+                </div>
+            </div>
+            <div
+                style="min-height: 50px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; padding: 2px; margin: 2px; width: fit-content;">
+                        Email</p>
+                </div>
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                    </p>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 30px; font-weight: bolder; padding: 2px;">
+                    </p>
+                </div>
+            </div>
+            <div
+                style="min-height: 50px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; padding: 2px; margin: 2px; width: fit-content;">
+                        Phone</p>
+                </div>
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                    </p>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 30px; font-weight: bolder; padding: 2px;">
+                        0542291101</p>
+                </div>
+            </div>
+            <div
+                style="min-height: 50px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; padding: 2px; margin: 2px; width: fit-content;">
+                        Date Of Birthday</p>
+                </div>
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                    </p>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 30px; font-weight: bolder; padding: 2px;">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div
+            style="min-height: 12px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+            <div
+                style="min-height: 10px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div style="width: 100%; height: 1px; background-color: rgb(0, 0, 0); margin: 2px;"></div>
+            </div>
+        </div>
+        <div
+            style="min-height: 55px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+            <div
+                style="min-height: 50px; width: 30%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; padding: 2px; margin: 2px; width: fit-content;">
+                        Account Details</p>
+                </div>
+                <div style="width: 100%; height: 1px; background-color: rgb(0, 0, 0); margin: 2px;"></div>
+            </div>
+        </div>
+        <div
+            style="min-height: 55px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+            <div
+                style="min-height: 50px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; padding: 2px; margin: 2px; width: fit-content;">
+                        Account ID</p>
+                </div>
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                    </p>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 30px; font-weight: bolder; padding: 2px;">
+                    </p>
+                </div>
+                <div>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; padding: 2px; margin: 2px; width: fit-content;">
+                        Tax Exemption</p>
+                </div>
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                    </p>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 30px; font-weight: bolder; padding: 2px;">
+                    </p>
+                </div>
+            </div>
+            <div
+                style="min-height: 50px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; padding: 2px; margin: 2px; width: fit-content;">
+                        Account Type</p>
+                </div>
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                    </p>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 30px; font-weight: bolder; padding: 2px;">
+                    </p>
+                </div>
+                <div>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; padding: 2px; margin: 2px; width: fit-content;">
+                        Billing Address</p>
+                </div>
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                    </p>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 30px; font-weight: bolder; padding: 2px;">
+                        Estaka Mabini, street - Dondla, zip - 123342, Philiphine</p>
+                </div>
+            </div>
+            <div
+                style="min-height: 50px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; padding: 2px; margin: 2px; width: fit-content;">
+                        Currency</p>
+                </div>
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                    </p>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 30px; font-weight: bolder; padding: 2px;">
+                    </p>
+                </div>
+                <div>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; padding: 2px; margin: 2px; width: fit-content;">
+                        Payment Method</p>
+                </div>
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                    </p>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 30px; font-weight: bolder; padding: 2px;">
+                    </p>
+                </div>
+            </div>
+            <div
+                style="min-height: 50px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; padding: 2px; margin: 2px; width: fit-content;">
+                        Language</p>
+                </div>
+                <div style="display: flex; align-items: flex-end;">
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px; padding: 2px;">
+                    </p>
+                    <p
+                        style="font-size: 150%; display: flex; align-items: center; justify-content: center; margin: 2px 2px 2px 30px; font-weight: bolder; padding: 2px;">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div
+            style="min-height: 12px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+            <div
+                style="min-height: 10px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div style="width: 100%; height: 1px; background-color: rgb(0, 0, 0); margin: 2px;"></div>
+            </div>
+        </div>
+        <div
+            style="min-height: 55px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+            <div
+                style="min-height: 50px; width: 100%; margin: 2px; padding: 2px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-style: solid; border-width: 0px;">
+                <div>
+                    <h5 style="text-align:start;">My signature below signisies that:</h5>
+                    <h5><span style="color: rgb(62,62,62);background-color: rgb(255,255,255);font-size: 13px;">1.
+                            ACCEPTANCE THE USE OF LOREM IPSUM TERMS AND CONDITIONS</span></h5>
+                    <p style="text-align:start;"><span
+                            style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">Your
+                            access to and use of Lorem Ipsum (the app) is subject exclusively to these Terms and
+                            Conditions. You will not use the app for any purpose that is unlawful or prohibited by these
+                            Terms and Conditions. By using the app you are fully accepting the terms, conditions and
+                            disclaimers contained in this notice. If you do not accept these Terms and Conditions you
+                            must immediately stop using the app.</span><br></p>
+                    <h5 style="text-align:start;"><span
+                            style="color: rgb(62,62,62);background-color: rgb(255,255,255);font-size: 13px;">2. CREDIT
+                            CARD DETAILS</span></h5>
+                    <p style="text-align:start;"><span
+                            style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">All
+                            Lorem Ipsum purchases are managed by the individual App Stores (Apple, Google Windows) and
+                            Lorem Ipsum will never store your credit card information or make it available to any third
+                            parties. Any purchasing information provided will be provided directly from you to the
+                            respective App Store and you will be subject to their credit card policies.</span><br></p>
+                    <h5 style="text-align:start;"><span
+                            style="color: rgb(62,62,62);background-color: rgb(255,255,255);font-size: 13px;">3. LEGAL
+                            ADVICE</span></h5>
+                    <p style="text-align:start;"><span
+                            style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">The
+                            contents of Lorem Ipsum app do not constitute advice and should not be relied upon in making
+                            or refraining from making, any decision.</span><br><span
+                            style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">All
+                            material contained on Lorem Ipsum is provided without any or warranty of any kind. You use
+                            the material on Lorem Ipsum at your own discretion</span><br></p>
+                    <h5 style="text-align:start;"><span
+                            style="color: rgb(62,62,62);background-color: rgb(255,255,255);font-size: 13px;">4. CHANGE
+                            OF USE</span></h5>
+                    <p style="text-align:start;"><span
+                            style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">Lorem
+                            Ipsum reserves the right to:</span><br></p>
+                    <ul>
+                        <li><span
+                                style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">4.1
+                                change or remove (temporarily or permanently) the app or any part of it without notice
+                                and you confirm that Lorem Ipsum shall not be liable to you for any such change or
+                                removal and.</span></li>
+                        <li><span
+                                style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">4.2
+                                change these Terms and Conditions at any time, and your continued use of the app
+                                following any changes shall be deemed to be your acceptance of such change.</span></li>
+                    </ul>
+                    <p style="text-align:start;"><br></p>
+                    <h5 style="text-align:start;"><span
+                            style="color: rgb(62,62,62);background-color: rgb(255,255,255);font-size: 13px;">5. LINKS TO
+                            THIRD PARTY APPS AND WEBSITES</span></h5>
+                    <p style="text-align:start;"><span
+                            style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">Lorem
+                            Ipsum app may include links to third party apps and websites that are controlled and
+                            maintained by others. Any link to other apps and websites is not an endorsement of such and
+                            you acknowledge and agree that we are not responsible for the content or availability of any
+                            such apps and websites.</span><br></p>
+                    <h5 style="text-align:start;"><span
+                            style="color: rgb(62,62,62);background-color: rgb(255,255,255);font-size: 13px;">6.
+                            COPYRIGHT</span></h5>
+                    <p style="text-align:start;"></p>
+                    <ul>
+                        <li><span
+                                style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">6.1
+                                All copyright, trade marks and all other intellectual property rights in the app and its
+                                content (including without limitation the app design, text, graphics and all software
+                                and source codes connected with the app) are owned by or licensed to Lorem Ipsum or
+                                otherwise used by Lorem Ipsum as permitted by law.</span></li>
+                        <li><span
+                                style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">6.2
+                                In accessing the app you agree that you will access the content solely for your
+                                personal, non-commercial use. None of the content may be downloaded, copied, reproduced,
+                                transmitted, stored, sold or distributed without the prior written consent of the
+                                copyright holder. This excludes the downloading, copying and/or printing of pages of the
+                                app for personal, non-commercial home use only.</span></li>
+                    </ul>
+                    <p style="text-align:start;"><br></p>
+                    <h5 style="text-align:start;"><span
+                            style="color: rgb(62,62,62);background-color: rgb(255,255,255);font-size: 13px;">7. LINKS TO
+                            AND FROM OTHER APPS AND WEBSITES</span></h5>
+                    <p style="text-align:start;"></p>
+                    <ul>
+                        <li><span
+                                style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">7.1
+                                Throughout this app you may find links to third party apps. The provision of a link to
+                                such an app does not mean that we endorse that app. If you visit any app via a link in
+                                this app you do so at your own risk.</span></li>
+                        <li><span
+                                style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">7.2
+                                Any party wishing to link to this app is entitled to do so provided that the conditions
+                                below are observed:</span></li>
+                        <li></li>
+                    </ul>
+                    <ol>
+                        <li><span
+                                style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">(a)
+                                You do not seek to imply that we are endorsing the services or products of another party
+                                unless this has been agreed with us in writing;</span></li>
+                        <li><span
+                                style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">(b)
+                                You do not misrepresent your relationship with this app; and</span></li>
+                        <li><span
+                                style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">(c)
+                                The app from which you link to this app does not contain offensive or otherwise
+                                controversial content or, content that infringes any intellectual property rights or
+                                other rights of a third party.</span></li>
+                    </ol>
+                    <ul>
+                        <li><span
+                                style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">7.3
+                                By linking to this app in breach of our terms, you shall indemnify us for any loss or
+                                damage suffered to this app as a result of such linking.</span></li>
+                    </ul>
+                    <p style="text-align:start;"><br></p>
+                    <h5 style="text-align:start;"><span
+                            style="color: rgb(62,62,62);background-color: rgb(255,255,255);font-size: 13px;">8.
+                            DISCLAIMERS AND LIMITATION OF LIABILITY</span></h5>
+                    <p style="text-align:start;"></p>
+                    <ul>
+                        <li><span
+                                style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">8.1
+                                The app is provided on an AS IS and AS AVAILABLE basis without any representation or
+                                endorsement made and without warranty of any kind whether express or implied, including
+                                but not limited to the implied warranties of satisfactory quality, fitness for a
+                                particular purpose, non-infringement, compatibility, security and accuracy.</span></li>
+                        <li><span
+                                style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">8.2
+                                To the extent permitted by law, Lorem Ipsum will not be liable for any indirect or
+                                consequential loss or damage whatever (including without limitation loss of business,
+                                opportunity, data, profits) arising out of or in connection with the use of the
+                                app.</span></li>
+                        <li><span
+                                style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">8.3
+                                Lorem Ipsum makes no warranty that the functionality of the app will be uninterrupted or
+                                error free, that defects will be corrected or that the app or the server that makes it
+                                available are free of viruses or anything else which may be harmful or
+                                destructive.</span></li>
+                        <li><span
+                                style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">8.4
+                                Nothing in these Terms and Conditions shall be construed so as to exclude or limit the
+                                liability of Lorem Ipsum for death or personal injury as a result of the negligence of
+                                Lorem Ipsum or that of its employees or agents.</span></li>
+                    </ul>
+                    <p style="text-align:start;"><br></p>
+                    <h5 style="text-align:start;"><span
+                            style="color: rgb(62,62,62);background-color: rgb(255,255,255);font-size: 13px;">9.
+                            INDEMNITY</span></h5>
+                    <p style="text-align:start;"><span
+                            style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">You
+                            agree to indemnify and hold Lorem Ipsum and its employees and agents harmless from and
+                            against all liabilities, legal fees, damages, losses, costs and other expenses in relation
+                            to any claims or actions brought against Lorem Ipsum arising out of any breach by you of
+                            these Terms and Conditions or other liabilities arising out of your use of this
+                            app.</span><br></p>
+                    <h5 style="text-align:start;"><span
+                            style="color: rgb(62,62,62);background-color: rgb(255,255,255);font-size: 13px;">10.
+                            SEVERANCE</span></h5>
+                    <p style="text-align:start;"><span
+                            style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">If
+                            any of these Terms and Conditions should be determined to be invalid, illegal or
+                            unenforceable for any reason by any court of competent jurisdiction then such Term or
+                            Condition shall be severed and the remaining Terms and Conditions shall survive and remain
+                            in full force and effect and continue to be binding and enforceable.</span><br></p>
+                    <h5 style="text-align:start;"><span
+                            style="color: rgb(62,62,62);background-color: rgb(255,255,255);font-size: 13px;">11.
+                            WAIVER</span></h5>
+                    <p style="text-align:start;"><span
+                            style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">If
+                            you breach these Conditions of Use and we take no action, we will still be entitled to use
+                            our rights and remedies in any other situation where you breach these Conditions of
+                            Use.</span><br></p>
+                    <h5 style="text-align:start;"><span
+                            style="color: rgb(62,62,62);background-color: rgb(255,255,255);font-size: 13px;">12.
+                            GOVERNING LAW</span></h5>
+                    <p style="text-align:start;"><span
+                            style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">These
+                            Terms and Conditions shall be governed by and construed in accordance with the law of and
+                            you hereby submit to the exclusive jurisdiction of the courts.</span><br></p>
+                    <h5 style="text-align:start;"><span
+                            style="color: rgb(62,62,62);background-color: rgb(255,255,255);font-size: 13px;">13. OUR
+                            CONTACT DETAILS</span></h5>
+                    <p style="text-align:start;"><span
+                            style="color: rgb(114,114,114);background-color: rgb(255,255,255);font-size: 16px;font-family: Open Sans;">Our
+                            Support Address:</span> <a href="http://www.astudioofourown.com/" target="_blank"><span
+                                style="color: rgb(41,128,185);background-color: initial;font-size: 16px;font-family: Open Sans;">http://www.astudioofourown.com</span></a>
+                    </p>
+                </div>
+                <div style="width: fit-content; margin-top: 20px;">
+                    <p style="font-size: 150%;">Signature</p>
+                    <div style="width: 160px; height: 80px; border: 1px solid;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

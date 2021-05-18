@@ -1,0 +1,17 @@
+@media print {
+  html, body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #fff;
+  }
+}
+ul, ol{
+margin-left: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
