@@ -86,7 +86,7 @@ function App() {
       left: "35%",
     }}>
             <ReactToPrint
-                trigger={() => <p style={{color: '#5de2f7', cursor: "pointer" }}>Print</p>}
+        trigger={() => <p style={{ color: '#5de2f7', cursor: "pointer", fontSize: "8px", }}>Print</p>}
                 content={() => componentRef.current}
             />
             <div style={{ display: "none" }}>
