@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     const call = async () => {
-      let response = await axios.post('https://q2m-be-ssr.herokuapp.com/api/htmlgenerator/byname/', {
+      let response = await axios.post('http://Network-LB-19c1c2f50ef59755.elb.us-east-1.amazonaws.com/api/htmlgenerator/byname/', {
         "name": "RENEWAL_SMART",
          "varJson" : {
           "empty": "empty",
@@ -72,7 +72,7 @@ function App() {
  
   var sectionStyle = {
     width: "100%",
-    height: "100vh",
+    height: "130vh",
     backgroundImage: "url(/static/media/orederSummary.6c201a10.png)",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
@@ -81,12 +81,12 @@ function App() {
   
   const PrintBtn = () => (
     <div style={{
-      position: "fixed",
-      top: "74.3%",
-      left: "35%",
+      position: "absolute",
+      top: "94.2vh",
+      left: "35.5vw",
     }}>
             <ReactToPrint
-        trigger={() => <p style={{ color: '#5de2f7', cursor: "pointer", fontSize: "8px", }}>Print</p>}
+                trigger={() => <p style={{ color: '#5de2f7', cursor: "pointer", fontSize: "8px", }}>Print</p>}
                 content={() => componentRef.current}
             />
             <div style={{ display: "none" }}>
